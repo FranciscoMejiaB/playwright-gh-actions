@@ -2,7 +2,6 @@ import { test, expect } from "@playwright/test";
 
 test("test env", async ({ page }) => {
   await page.goto(process.env.URL!);
-  await page.pause();
 });
 
 test("test 1", async ({ page }) => {

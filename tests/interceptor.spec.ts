@@ -51,6 +51,4 @@ test("modificar requests", async ({ page }) => {
   });
 
   await page.goto("https://demoqa.com/books");
-
-  await page.pause();
 });
