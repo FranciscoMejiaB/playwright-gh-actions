@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "./pages/LoginPage";
 
-test("cancelar requests", async ({ page }) => {
+test.skip("cancelar requests", async ({ page }) => {
   // monitoreamos todas las requests que se hacen en la pagina
   await page.on("request", (req) => {
     console.log(req.url());
@@ -20,7 +20,7 @@ test("cancelar requests", async ({ page }) => {
   await page.waitForTimeout(1000);
 });
 
-test.only("modificar requests", async ({ page }) => {
+test("modificar requests", async ({ page }) => {
   // monitoreamos todas las requests que se hacen en la pagina
   await page.on("request", (req) => {
     console.log(req.url());
